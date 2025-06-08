@@ -29,9 +29,12 @@ sequelize.authenticate()
 const db = {}
 db.blogs = require("./../models/blogModel")(sequelize,DataTypes)
 db.products = require("./../models/productModel")(sequelize, DataTypes)
+db.infos = require("../models/info")(sequelize, DataTypes)
+db.todos = require("../models/todoModel")(sequelize, DataTypes)
 
-sequelize.sync({alter: true}).then(() =>{
+sequelize.sync({alter: false}).then(() =>{
     console.log("Migrated successfully")
 })//migration code
 
 module.exports = sequelize
+module.exports = db

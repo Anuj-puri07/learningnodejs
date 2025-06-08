@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Login Form</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #e7edf5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.container {
+    width: 350px;
+    height: 70vh;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    background: #2c3e73;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+.input-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+.login-btn {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    background: #2c3e73;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.login-btn:hover {
+    background: #1f2d52;
+}
+.footer {
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer a {
+    text-decoration: none;
+    color: #2c3e73;
+}
+     </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <span style="font-size: 40px; color: white;">&#9679;&#9679;&#9679;</span>
+        </div>
+        <div class="input-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Username@gmail.com">
+        </div>
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" placeholder="●●●●●●●●●●●●●●●●●●●●●●●●●●">
+        </div>
+        <a href="#" class="login-btn">Login</a>
+        <div class="footer">
+            <a href="#">Signup</a>
+            <a href="#">Forgot Password?</a>
+        </div>
+    </div>
+</body>
+</html>
