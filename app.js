@@ -9,8 +9,9 @@ app.use(express.json());
 
 
 
-app.get("/",(req,res)=>{
-    res.send("this is my home page")
+app.get("/",async (req,res)=>{
+    const data= await db.todos.findAll() // select everything from the table
+    res.render("todo/gettodo", {todos : data})
 })
 
 app.get("/contact",(req,res)=>{
