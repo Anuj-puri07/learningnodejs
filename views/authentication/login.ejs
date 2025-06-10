@@ -79,23 +79,25 @@
      </style>
 </head>
 <body>
-    <div class="container">
+        <form action="/login" method="post">
         <div class="logo">
+            
             <span style="font-size: 40px; color: white;">&#9679;&#9679;&#9679;</span>
         </div>
         <div class="input-group">
             <label>Email Address</label>
-            <input type="email" placeholder="Username@gmail.com">
+            <input type="email" placeholder="Username@gmail.com" name="email" required>
         </div>
         <div class="input-group">
             <label>Password</label>
-            <input type="password" placeholder="●●●●●●●●●●●●●●●●●●●●●●●●●●">
+            <input type="password" name="password" placeholder="●●●●●●●●●●●●●●●●●●●●●●●●●●" required >
         </div>
-        <a href="#" class="login-btn">Login</a>
+        <input type="submit">
         <div class="footer">
             <a href="#">Signup</a>
             <a href="#">Forgot Password?</a>
         </div>
-    </div>
+        </form>
+    
 </body>
 </html>
